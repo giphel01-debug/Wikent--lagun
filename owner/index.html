@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wikent @ Lagun, owner panel</title>
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+    <div>
+      <div style="font-family:Georgia,serif;font-size:22px;font-weight:600;">Wikent @ Lagun</div>
+      <div class="muted">Owner panel</div>
+    </div>
+    <div id="header-actions"></div>
+  </div>
+
+  <div id="login-screen" class="surface-box" style="max-width:360px;">
+    <div class="field"><label>Email</label><input id="login-email" type="email"></div>
+    <div class="field"><label>Password</label><input id="login-password" type="password"></div>
+    <button class="btn btn-solid" id="login-submit">Log in</button>
+    <div id="login-msg" class="muted mt"></div>
+  </div>
+
+  <div id="panel" class="hidden">
+    <div class="tabs" id="tabs"></div>
+    <div id="tab-content"></div>
+  </div>
+</div>
+
+<script src="../assets/config.js"></script>
+<script src="owner.js"></script>
+</body>
+</html>

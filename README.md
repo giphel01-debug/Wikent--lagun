@@ -1,6 +1,6 @@
 # Weekend Houses
 
-A weekend house booking platform for three vacation rentals in the Lagun area of Curaçao. Real time availability, flexible date booking, a full owner management panel, and automated notifications, built as a real deployed system rather than a static template.
+A weekend house booking platform for three vacation rentals. Real time availability, flexible date booking, a full owner management panel, and automated notifications, built as a real deployed system rather than a static template.
 
 **Live site:** https://lagunwikenthuis.com
 

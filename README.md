@@ -4,9 +4,7 @@ A weekend house booking platform for three vacation rentals in the Lagun area of
 
 **Live site:** https://lagunwikenthuis.com
 
-## What this is
 
-The property owner was managing three rental houses entirely through WhatsApp, no way to see what was actually booked, easy to accidentally double book, no record of who had asked about what. This project replaces that with a real booking and property management platform: a public site guests actually browse and book from, and a private dashboard the owner uses to run the business day to day.
 
 ## Features
 
@@ -42,32 +40,7 @@ The property owner was managing three rental houses entirely through WhatsApp, n
 - [Resend](https://resend.com) for transactional email
 - Deployed on [Netlify](https://netlify.com)
 
-## Project structure
 
-```
-wikent-lagun-site/
-├── index.html          # Public site
-├── owner/
-│   ├── index.html      # Owner panel, requires login
-│   └── owner.js
-├── assets/
-│   ├── app.js           # Public site logic
-│   ├── config.js        # Shared Supabase connection and helpers
-│   ├── style.css
-│   └── favicon and logo assets
-└── README.md
-```
 
-## Running this yourself
 
-This is a static site with no build step.
 
-1. Create a [Supabase](https://supabase.com) project.
-2. Set up the schema: tables for apartments, amenities, reservations, leads, and site settings, with row level security enabled so only an authenticated owner can write.
-3. Update `assets/config.js` with your own project URL and anon key. The anon key is meant to be public, it's the row level security policies that actually control access, not keeping this key secret.
-4. Create an owner account under Supabase Authentication.
-5. Deploy the folder to any static host, no build configuration needed.
-
-## Notes
-
-Built as a real client project, not a demo. Running costs stay under $20 a year at this scale, domain registration being the only real recurring cost.

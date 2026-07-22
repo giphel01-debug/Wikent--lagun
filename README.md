@@ -33,12 +33,7 @@ A weekend house booking platform for three vacation rentals in the Lagun area of
 - Email alert the moment a request comes in, with a direct link back into the owner panel to that exact request
 - A WhatsApp message pre filled and ready to send after a guest submits a request
 
-## Tech stack
 
-- Vanilla HTML, CSS, and JavaScript, no framework, no build step
-- [Supabase](https://supabase.com) for the Postgres database, authentication, storage, and edge functions
-- [Resend](https://resend.com) for transactional email
-- Deployed on [Netlify](https://netlify.com)
 
 
 
